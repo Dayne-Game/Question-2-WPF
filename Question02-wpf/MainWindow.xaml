@@ -1,0 +1,28 @@
+﻿<Window x:Class="Question02_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Question02_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="Question 02 WPF" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Background="#ddd" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Button x:Name="Personbtn" Content="Person" Grid.Column="1" Grid.Row="2" Click="Personbtn_Click"></Button>
+        <Button x:Name="Supervisorbtn" Content="Supervisor" Grid.Column="3" Grid.Row="2" Click="Supervisorbtn_Click"></Button>
+    </Grid>
+</Window>
